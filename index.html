@@ -10,6 +10,8 @@
   <body>
     <a-scene>
       <a-assets>
+        <audio id="ambient_sound" src="large_conf_ambient"></audio>
+        
         <img id="front" src="front2.jpg">
         <img id="right" src="right2.jpg">
         <img id="left" src="left2.jpg">
@@ -44,7 +46,7 @@
         <a-entity camera look-controls></a-entity>
       </a-entity>
     
-    
+      <a-entity sound="autoplay: true; src: #ambient_sound;"></a-entity>
     </a-scene>
    
     
