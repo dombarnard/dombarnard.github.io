@@ -40,7 +40,7 @@
         <video id="video_timer" src="timer.mp4" loop webkit-playsinline></video>
         
         <script id="link" type="text/nunjucks">
-            <a-plane class="link" height="1" width="1"
+            <a-plane class="link" height="0.2" width="10.2" position="0.2 -0.4 1.85"
             material="shader: flat; src: {{ thumb }}"
             event-set__1="_event: mousedown; scale: 1 1 1"
             event-set__2="_event: mouseup; scale: 1.2 1.2 1"
@@ -55,8 +55,7 @@
       <a-video src="#video" width="4" height="2" position="0.016 -1.025 -1.999" scale="1.007 1 1"></a-video>
 
       <a-image src="#slide1" width="4" height="2.25" position="0 0.9 1.85" rotation="0 180 0"></a-image>
-      <a-image src="#slide1-thumb" width="0.2" height="0.2" position="0.2 -0.4 1.85" rotation="0 180 0"></a-image>
-      <a-image src="#slide2-thumb" width="0.2" height="0.2" position="-0.2 -0.4 1.85" rotation="0 180 0"></a-image>
+
       
       <a-image src="#video_timer" width="0.7" height="0.25" position="-1.35 -1.7 -0.75" rotation="-55 0 0"></a-image>
       
