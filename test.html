@@ -7,7 +7,8 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <link rel="icon" type="image/png" href="http://virtualspeech.com/img/VS_favicon.png"/>
     <link rel="canonical" href="http://virtualspeech.com/webvr">
-        <script src="https://aframe.io/releases/0.3.2/aframe.min.js"></script>
+    
+    <script src="https://aframe.io/releases/0.3.2/aframe.min.js"></script>
     <script src="https://npmcdn.com/aframe-animation-component@3.0.1"></script>
     <script src="https://npmcdn.com/aframe-event-set-component@3.0.1"></script>
     <script src="https://npmcdn.com/aframe-layout-component@3.0.1"></script>
@@ -34,7 +35,7 @@
         <img id="slide1-thumb" src="slide1_thumb.jpg">
         <img id="slide2-thumb" src="slide2_thumb.jpg">
         
-        <audio id="click-sound" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
+        <audio id="click-sound" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
         
         <video id="video" src="large_conf.mp4" loop webkit-playsinline></video>
         <video id="video_timer" src="timer.mp4" loop webkit-playsinline></video>
@@ -83,7 +84,7 @@
         <a-cursor id="cursor"
           animation__click="property: scale; startEvents: click; from: 0.1 0.1 0.1; to: 1 1 1; dur: 150"
           animation__fusing="property: fusing; startEvents: fusing; from: 1 1 1; to: 0.1 0.1 0.1; dur: 1500"
-          
+          event-set__1="_event: mouseenter; color: #000000"
           
           raycaster="objects: .link"></a-cursor>
       </a-entity>
